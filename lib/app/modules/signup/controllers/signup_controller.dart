@@ -17,7 +17,7 @@ import 'package:get/get.dart';
 class SignupController extends GetxController {
   Rx<GlobalKey<FormState>> formKey = GlobalKey<FormState>().obs;
 
-  TextEditingController countryCodeController = TextEditingController(text: '+91');
+  TextEditingController countryCodeController = TextEditingController(text: '+1');
   TextEditingController phoneNumberController = TextEditingController();
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();

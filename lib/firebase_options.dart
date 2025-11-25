@@ -50,24 +50,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_ANDROID_API_KEY',
-    appId: 'YOUR_ANDROID_APP_ID',
-    messagingSenderId: 'YOUR_ANDROID_MESSAGING_SENDER_ID',
-    projectId: 'YOUR_ANDROID_PROJECT_ID',
-    databaseURL: 'YOUR_ANDROID_DATABASE_URL',
-    storageBucket: 'YOUR_ANDROID_STORAGE_BUCKET',
+    apiKey: 'AIzaSyAnXU1RMJrc2WodsRxc0tj7DqFv_vNtL4I',
+    appId: '1:339672413407:android:244a9cd9f67e036236e56a',
+    messagingSenderId: '339672413407',
+    projectId: 'ride-with-purpose',
+    storageBucket: 'ride-with-purpose.firebasestorage.app',
+    databaseURL: null,
   );
 
+  // static const FirebaseOptions ios = FirebaseOptions(
+  //   apiKey: 'YOUR_IOS_API_KEY',
+  //   appId: 'YOUR_IOS_APP_ID',
+  //   messagingSenderId: 'YOUR_IOS_MESSAGING_SENDER_ID',
+  //   projectId: 'YOUR_IOS_PROJECT_ID',
+  //   databaseURL: 'YOUR_IOS_DATABASE_URL',
+  //   storageBucket: 'YOUR_IOS_STORAGE_BUCKET',
+  //   androidClientId: 'YOUR_ANDROID_CLIENT_ID',
+  //   iosClientId: 'YOUR_IOS_CLIENT_ID',
+  //   iosBundleId: 'YOUR_IOS_BUNDLE_ID',
+  // );
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR_IOS_API_KEY',
-    appId: 'YOUR_IOS_APP_ID',
-    messagingSenderId: 'YOUR_IOS_MESSAGING_SENDER_ID',
-    projectId: 'YOUR_IOS_PROJECT_ID',
-    databaseURL: 'YOUR_IOS_DATABASE_URL',
-    storageBucket: 'YOUR_IOS_STORAGE_BUCKET',
-    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
-    iosClientId: 'YOUR_IOS_CLIENT_ID',
-    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
-  );
+    apiKey: 'AIzaSyCyX916fmuOLz5a6ZP78omaNylkNv67Gh4',
+    appId: '1:339672413407:ios:0f3b54dad1b6082036e56a',
+    messagingSenderId: '339672413407',
+    projectId: 'ride-with-purpose',
+    storageBucket: 'ride-with-purpose.firebasestorage.app',
+    databaseURL: null, // Only add if Realtime Database is used
 
+    // iOS-specific fields
+    iosClientId:
+        '339672413407-979h1qr6c6i62qaaalmq0omcugg3eue9.apps.googleusercontent.com',
+    iosBundleId: 'com.craftech.rwpcustomer',
+
+    // Optional Android client for cross-platform auth
+    androidClientId:
+        '339672413407-6vuuh10i3f2to5gsi84cevu66ml0kjts.apps.googleusercontent.com',
+  );
 }
