@@ -80,7 +80,7 @@ class DefaultFirebaseOptions {
     // iOS-specific fields
     iosClientId:
         '339672413407-979h1qr6c6i62qaaalmq0omcugg3eue9.apps.googleusercontent.com',
-    iosBundleId: 'com.craftech.rwpcustomer',
+    iosBundleId: 'com.craftech.rwpdriver',
 
     // Optional Android client for cross-platform auth
     androidClientId:

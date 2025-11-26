@@ -38,7 +38,7 @@ const Map<String, String> lnAr = {
   "Please Select": "يرجى التحديد",
   "Camera": "كاميرا",
   "Gallery": "معرض الصور",
-  "MyTaxi": "تاكسي بلدي",
+  "RWP": "تاكسي بلدي",
   "Total Earnings": "إجمالي الأرباح",
   "Total Rides": "إجمالي الرحلات",
   "New Ride": "رحلة جديدة",
