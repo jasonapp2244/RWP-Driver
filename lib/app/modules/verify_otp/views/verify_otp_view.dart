@@ -115,7 +115,7 @@ class VerifyOtpView extends StatelessWidget {
                               userModel.fcmToken = fcmToken;
 
                               ShowToastDialog.closeLoader();
-                              Get.off(const SignupView(), arguments: {
+                              Get.off(()=>const SignupView(), arguments: {
                                 "userModel": userModel,
                               });
                             } else {
@@ -131,26 +131,26 @@ class VerifyOtpView extends StatelessWidget {
                                             if (Constant.userModel!.subscriptionExpiryDate!.toDate().isAfter(DateTime.now())) {
                                               bool permissionGiven = await Constant.isPermissionApplied();
                                               if (permissionGiven) {
-                                                Get.offAll(const HomeView());
+                                                Get.offAll(() => const HomeView());
                                               } else {
-                                                Get.offAll(const PermissionView());
+                                                Get.offAll(() => const PermissionView());
                                               }
                                             } else {
-                                              Get.offAll(SubscriptionPlanView());
+                                              Get.offAll(() => SubscriptionPlanView());
                                             }
                                           } else {
-                                            Get.offAll(SubscriptionPlanView());
+                                            Get.offAll(() => SubscriptionPlanView());
                                           }
                                         } else {
                                           bool permissionGiven = await Constant.isPermissionApplied();
                                           if (permissionGiven) {
-                                            Get.offAll(const HomeView());
+                                            Get.offAll(() => const HomeView());
                                           } else {
-                                            Get.offAll(const PermissionView());
+                                            Get.offAll(() => const PermissionView());
                                           }
                                         }
                                       } else {
-                                        Get.offAll(const VerifyDocumentsView(isFromDrawer: false));
+                                        Get.offAll(() => const VerifyDocumentsView(isFromDrawer: false));
                                       }
                                     } else {
                                       await FirebaseAuth.instance.signOut();
@@ -166,7 +166,7 @@ class VerifyOtpView extends StatelessWidget {
                                   userModel.loginType = Constant.phoneLoginType;
                                   userModel.fcmToken = fcmToken;
 
-                                  Get.off(const SignupView(), arguments: {
+                                  Get.off(()=>const SignupView(), arguments: {
                                     "userModel": userModel,
                                   });
                                 }
@@ -202,7 +202,7 @@ class VerifyOtpView extends StatelessWidget {
                                 userModel.fcmToken = fcmToken;
 
                                 ShowToastDialog.closeLoader();
-                                Get.off(const SignupView(), arguments: {
+                                Get.off(()=>const SignupView(), arguments: {
                                   "userModel": userModel,
                                 });
                               } else {
@@ -235,7 +235,7 @@ class VerifyOtpView extends StatelessWidget {
                                     userModel.loginType = Constant.phoneLoginType;
                                     userModel.fcmToken = fcmToken;
 
-                                    Get.off(const SignupView(), arguments: {
+                                    Get.off(()=>const SignupView(), arguments: {
                                       "userModel": userModel,
                                     });
                                   }

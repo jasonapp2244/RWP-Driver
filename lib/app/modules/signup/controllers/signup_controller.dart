@@ -76,21 +76,21 @@ class SignupController extends GetxController {
                 if (Constant.userModel!.subscriptionExpiryDate!.toDate().isAfter(DateTime.now())) {
                   bool permissionGiven = await Constant.isPermissionApplied();
                   if (permissionGiven) {
-                    Get.offAll(const HomeView());
+                    Get.offAll(() => const HomeView());
                   } else {
-                    Get.offAll(const PermissionView());
+                    Get.offAll(() => const PermissionView());
                   }
                 } else {
-                  Get.offAll(SubscriptionPlanView());
+                  Get.offAll(() => SubscriptionPlanView());
                 }
               } else {
-                Get.offAll(SubscriptionPlanView());
+                Get.offAll(() => SubscriptionPlanView());
               }
             } else {
-              Get.offAll(HomeView());
+              Get.offAll(() => HomeView());
             }
           } else {
-            Get.offAll(const VerifyDocumentsView(isFromDrawer: false));
+            Get.offAll(() => const VerifyDocumentsView(isFromDrawer: false));
           }
         } else {
           await FirebaseAuth.instance.signOut();

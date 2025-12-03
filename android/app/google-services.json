@@ -9,16 +9,16 @@
       "client_info": {
         "mobilesdk_app_id": "1:339672413407:android:568d74fb957429a436e56a",
         "android_client_info": {
-          "package_name": "com.craftech.rwpdriver"
+          "package_name": "com.craftech.rwpcustomer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "339672413407-gp501gkaubupmi6orub454ghp4jmfonr.apps.googleusercontent.com",
+          "client_id": "339672413407-9eb60h6gj71d31dbicsg75l0nm2mq04c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.craftech.rwpdriver",
-            "certificate_hash": "a5a6b0dae483354db64d89a0bf9315cc2da7a993"
+            "package_name": "com.craftech.rwpcustomer",
+            "certificate_hash": "8f06829a9d9d46dc1227ff96918065326f517036"
           }
         },
         {
@@ -42,7 +42,7 @@
               "client_id": "339672413407-979h1qr6c6i62qaaalmq0omcugg3eue9.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.craftech.rwpdriver"
+                "bundle_id": "com.mydriver.customer"
               }
             }
           ]
@@ -58,11 +58,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "339672413407-6vuuh10i3f2to5gsi84cevu66ml0kjts.apps.googleusercontent.com",
+          "client_id": "339672413407-eta3pcq6ejf2o7170uqddlisn4gqepr9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.craftech.rwpdriver",
-            "certificate_hash": "a5a6b0dae483354db64d89a0bf9315cc2da7a993"
+            "certificate_hash": "8f06829a9d9d46dc1227ff96918065326f517036"
           }
         },
         {
@@ -86,7 +86,7 @@
               "client_id": "339672413407-979h1qr6c6i62qaaalmq0omcugg3eue9.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.craftech.rwpdriver"
+                "bundle_id": "com.mydriver.customer"
               }
             }
           ]

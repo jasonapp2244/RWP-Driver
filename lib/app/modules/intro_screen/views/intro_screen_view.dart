@@ -52,7 +52,7 @@ class IntroScreenView extends StatelessWidget {
                     child: TextButton(
                         onPressed: () {
                           Preferences.setBoolean(Preferences.isFinishOnBoardingKey, true);
-                          Get.offAll(const LoginView());
+                          Get.offAll(() => const LoginView());
                         },
                         child: Row(
                           children: [
@@ -135,7 +135,7 @@ class IntroScreenView extends StatelessWidget {
                         buttonTextColor: AppThemData.black,
                         onTap: () {
                           Preferences.setBoolean(Preferences.isFinishOnBoardingKey, true);
-                          Get.offAll(const LoginView());
+                          Get.offAll(() => const LoginView());
                         }),
                   ),
                   SizedBox(height: Responsive.width(10, context))
