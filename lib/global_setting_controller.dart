@@ -32,7 +32,7 @@ class GlobalSettingController extends GetxController {
         getVehicleTypeList(),
         getLanguage(),
       ]);
-    } catch (e, s) {
+    } catch (e) {
       // log("Global init error: $e");
     }
 

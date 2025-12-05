@@ -67,7 +67,7 @@ class SubscriptionPlanController extends GetxController {
         paymentModel.value = payment;
         if (paymentModel.value.strip!.isActive == true) {
           Stripe.publishableKey = paymentModel.value.strip!.clientPublishableKey.toString();
-          Stripe.merchantIdentifier = 'MyTaxi';
+          Stripe.merchantIdentifier = 'RWP';
           Stripe.instance.applySettings();
         }
       }
@@ -184,7 +184,7 @@ class SubscriptionPlanController extends GetxController {
                     primary: AppThemData.primary500,
                   ),
                 ),
-                merchantDisplayName: 'MyTaxi'));
+                merchantDisplayName: 'RWP'));
         displayStripePaymentSheet(amount: amount);
       }
     } catch (e, s) {

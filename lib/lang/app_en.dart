@@ -38,7 +38,7 @@ const Map<String, String> enUS = {
   "Please Select": "Please Select",
   "Camera": "Camera",
   "Gallery": "Gallery",
-  "MyTaxi": "MyTaxi",
+  "RWP": "RWP",
   "verify_OTP": "Verify OTP",
   "Total Earnings": "Total Earnings",
   "Total Rides": "Total Rides",
@@ -50,16 +50,16 @@ const Map<String, String> enUS = {
   "Go Online": "Go Online",
   "Customer Reviews": "Customer Reviews",
   "View all": "View all",
-  "Welcome to MyTaxi": "Welcome to MyTaxi",
+  "Welcome to RWP": "Welcome to RWP",
   "Your reliable partner for swift and convenient rides. Experience hassle-free transportation at your fingertips.":
       "Your reliable partner for swift and convenient rides. Experience hassle-free transportation at your fingertips.",
   "Fast and Reliable": "Fast and Reliable",
-  "MyTaxi ensures prompt and reliable rides, getting you to your destination with speed and efficiency.":
-      "MyTaxi ensures prompt and reliable rides, getting you to your destination with speed and efficiency.",
+  "RWP ensures prompt and reliable rides, getting you to your destination with speed and efficiency.":
+      "RWP ensures prompt and reliable rides, getting you to your destination with speed and efficiency.",
   "Skip": "Skip",
   "Seamless User Experience": "Seamless User Experience",
-  "Enjoy a user-friendly interface, easy bookings, and secure payments with MyTaxi. Your journey, your way.":
-      "Enjoy a user-friendly interface, easy bookings, and secure payments with MyTaxi. Your journey, your way.",
+  "Enjoy a user-friendly interface, easy bookings, and secure payments with RWP. Your journey, your way.":
+      "Enjoy a user-friendly interface, easy bookings, and secure payments with RWP. Your journey, your way.",
   "Get Started": "Get Started",
   "Language": "Language",
   "Login": "Login",
@@ -147,8 +147,8 @@ const Map<String, String> enUS = {
   "Did’t Receive a code ?": "Did’t Receive a code ?",
   "Resend Code": "Resend Code",
   "No Rides Found": "No Rides Found",
-  "Your ride history is currently empty. Start your journey with MyTaxi by riding your first ride now!":
-      "Your ride history is currently empty. Start your journey with MyTaxi by riding your first ride now!",
+  "Your ride history is currently empty. Start your journey with RWP by riding your first ride now!":
+      "Your ride history is currently empty. Start your journey with RWP by riding your first ride now!",
   "Pickup Point": "Pickup Point",
   "Dropout Point": "Dropout Point",
   "Marcado Pago Payment": "Marcado Pago Payment",

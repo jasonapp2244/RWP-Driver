@@ -4,7 +4,6 @@ import 'dart:async';
 
 import 'package:driver/app/modules/subscription_plan/views/subscription_plan_view.dart';
 import 'package:get/get.dart';
-import 'package:driver/app/models/driver_user_model.dart';
 import 'package:driver/app/modules/home/views/home_view.dart';
 import 'package:driver/app/modules/intro_screen/views/intro_screen_view.dart';
 import 'package:driver/app/modules/login/views/login_view.dart';
