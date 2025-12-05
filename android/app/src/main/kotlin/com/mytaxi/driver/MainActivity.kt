@@ -1,4 +1,4 @@
-package com.craftech.rwpdriver
+package com.appscrub.rwpdriver
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragmentActivity

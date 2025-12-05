@@ -24,7 +24,7 @@ def flutterVersionCode = localProperties.getProperty('flutterVersionCode', '1')
 def flutterVersionName = localProperties.getProperty('flutterVersionName', '1.0.0')
 
 android {
-    namespace "com.craftech.rwpdriver"
+    namespace "com.appscrub.rwpdriver"
     compileSdkVersion 36
     ndkVersion = "29.0.14033849"
 
@@ -52,7 +52,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.craftech.rwpdriver"
+        applicationId "com.appscrub.rwpdriver"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion       
         versionCode flutterVersionCode.toInteger()
