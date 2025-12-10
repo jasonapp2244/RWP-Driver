@@ -1,16 +1,19 @@
 const Map<String, String> enUS = {
   'please_wait': "Please wait",
-  "Upload all required documents.":"Upload all required documents.",
+  "Upload all required documents.": "Upload all required documents.",
   "Do you want to start this Ride?": "Do you want to start this Ride?",
-  "Ask the customer for an OTP so that you can start this ride": "Ask the customer for an OTP so that you can start this ride",
+  "Ask the customer for an OTP so that you can start this ride":
+      "Ask the customer for an OTP so that you can start this ride",
   "Cancel": "Cancel",
   "Ask for OTP": "Ask for OTP",
   "Ride Detail": "Ride Detail",
   "Pickup": "Pickup",
   "Complete Ride": "Complete Ride",
-  "Payment of this ride is Remaining From Customer": "Payment of this ride is Remaining From Customer",
+  "Payment of this ride is Remaining From Customer":
+      "Payment of this ride is Remaining From Customer",
   "Confirm Cash Payment": "Confirm Cash Payment",
-  "Are you sure you want complete the  ride with a cash payment?": "Are you sure you want complete the  ride with a cash payment?",
+  "Are you sure you want complete the  ride with a cash payment?":
+      "Are you sure you want complete the  ride with a cash payment?",
   "Complete": "Complete",
   "Track Ride": "Track Ride",
   "Ride Status": "Ride Status",
@@ -99,8 +102,10 @@ const Map<String, String> enUS = {
   "Allow Access": "Allow Access",
   "Reasons for Canceling Ride": "Reasons for Canceling Ride",
   "Continue": "Continue",
-  "Your ride is successfully cancelled.": "Your ride is successfully cancelled.",
-  "We hope to serve you better next time.": "We hope to serve you better next time.",
+  "Your ride is successfully cancelled.":
+      "Your ride is successfully cancelled.",
+  "We hope to serve you better next time.":
+      "We hope to serve you better next time.",
   "Back to Home": "Back to Home",
   "Home": "Home",
   "Something went wrong!": "Something went wrong!",
@@ -120,22 +125,25 @@ const Map<String, String> enUS = {
   "Select Vehicle Brand": "Select Vehicle Brand",
   "Vehicle Model": "Vehicle Model",
   "Select Vehicle Model": "Select Vehicle Model",
-  "Vehicle Number": "Vehicle Number",
-  "Select Vehicle Number": "Select Vehicle Number",
+  "Vehicle license number plate": "Vehicle license number plate",
+  "Select Vehicle license number plate": "Select Vehicle license number plate",
   "Please enter a valid details": "Please enter a valid details",
   "Upload": "Upload",
   "Front Side": "Front Side",
   "Browse": "Browse",
   "Back Side": "Back Side",
-  "Upload clear pictures of both sides of": "Upload clear pictures of both sides of",
-  "The uploaded image should be in .jpg, .png, or .pdf format.": "The uploaded image should be in .jpg, .png, or .pdf format.",
+  "Upload clear pictures of both sides of":
+      "Upload clear pictures of both sides of",
+  "The uploaded image should be in .jpg, .png, or .pdf format.":
+      "The uploaded image should be in .jpg, .png, or .pdf format.",
   "Date of Birth": "Date of Birth",
   "Enter Date of Birth": "Enter Date of Birth",
   "camera": "camera",
   "gallery": "gallery",
   "Verify your details": "Verify your details",
   "Check Status": "Check Status",
-  "User disabled by administrator, Please contact to admin": "User disabled by administrator, Please contact to admin",
+  "User disabled by administrator, Please contact to admin":
+      "User disabled by administrator, Please contact to admin",
   "Upload Your Documents": "Upload Your Documents",
   "Securely upload required documents for identity verification and account authentication":
       "Securely upload required documents for identity verification and account authentication",
@@ -143,7 +151,8 @@ const Map<String, String> enUS = {
   "Verified": "Verified",
   "Not Verified": "Not Verified",
   "Verify Your Phone Number": "Verify Your Phone Number",
-  "Enter  6-digit code sent to your mobile number to complete verification.": "Enter  6-digit code sent to your mobile number to complete verification.",
+  "Enter  6-digit code sent to your mobile number to complete verification.":
+      "Enter  6-digit code sent to your mobile number to complete verification.",
   "Did’t Receive a code ?": "Did’t Receive a code ?",
   "Resend Code": "Resend Code",
   "No Rides Found": "No Rides Found",
@@ -158,7 +167,8 @@ const Map<String, String> enUS = {
   "Continue Payment": "Continue Payment",
   "Payment": "Payment",
   "Services": "Services",
-  "Failed to update status please try again": "Failed to update status please try again",
+  "Failed to update status please try again":
+      "Failed to update status please try again",
   "Online": "Online",
   "Document": "Document",
   "Rate Us": "Rate Us",
@@ -171,7 +181,8 @@ const Map<String, String> enUS = {
   "Terms & Condition": "Terms & Condition",
   "Privacy & Policy": "Privacy & Policy",
   "Cancel Ride": "Cancel Ride",
-  "Are you sure you want cancel this ride?": "Are you sure you want cancel this ride?",
+  "Are you sure you want cancel this ride?":
+      "Are you sure you want cancel this ride?",
   "Ride cancelled successfully!": "Ride cancelled successfully!",
   "Your Ride is Rejected": "Your Ride is Rejected",
   "Accept": "Accept",
@@ -209,7 +220,8 @@ const Map<String, String> enUS = {
   "Total Amount": "Total Amount",
   "Add Bid": "Add Bid",
   "Confirm Intercity Ride Request": "Confirm Intercity Ride Request",
-  "Intercity Ride accepted successfully!": "Intercity Ride accepted successfully!",
+  "Intercity Ride accepted successfully!":
+      "Intercity Ride accepted successfully!",
   "No booking details available.": "No booking details available.",
   "Enter Bid Amount": "Enter Bid Amount",
   "Bid": "Bid",
@@ -217,9 +229,12 @@ const Map<String, String> enUS = {
   "Parcel Ride Detail": "Parcel Ride Detail",
   "Dimension": "Dimension",
   "Parcel Image": "Parcel Image",
-  "Reasons for Canceling Intercity Ride": "Reasons for Canceling Intercity Ride",
-  "Your intercity ride is successfully cancelled.": "Your intercity ride is successfully cancelled.",
-  "Intercity Ride Cancelled Successfully..": "Intercity Ride Cancelled Successfully..",
+  "Reasons for Canceling Intercity Ride":
+      "Reasons for Canceling Intercity Ride",
+  "Your intercity ride is successfully cancelled.":
+      "Your intercity ride is successfully cancelled.",
+  "Intercity Ride Cancelled Successfully..":
+      "Intercity Ride Cancelled Successfully..",
   "No Search Data": "No Search Data",
   "Select Date": "Select Date",
   "Cab Rides": "Cab Rides",
@@ -227,7 +242,8 @@ const Map<String, String> enUS = {
   "Parcel Rides": "Parcel Rides",
   "Ride Statement": "Ride Statement",
   "Download Ride Statement": "Download Ride Statement",
-  "Select your preferred cab type, choose a date range and download your ride statement": "Select your preferred cab type, choose a date range and download your ride statement",
+  "Select your preferred cab type, choose a date range and download your ride statement":
+      "Select your preferred cab type, choose a date range and download your ride statement",
   "Select Ride Type": "Select Ride Type",
   "Select Star date to End Date": "Select Star date to End Date",
   "Download": "Download",
@@ -235,7 +251,8 @@ const Map<String, String> enUS = {
   "clear": "clear",
   "OK": "OK",
   "Delete account": "Delete account",
-  "Your account will be deleted permanently. Your Data will not be Restored Again": "Your account will be deleted permanently. Your Data will not be Restored Again",
+  "Your account will be deleted permanently. Your Data will not be Restored Again":
+      "Your account will be deleted permanently. Your Data will not be Restored Again",
   "Account Deleted Successfully..": "Account Deleted Successfully..",
   "Delete": "Delete",
   "Your Subscription": "Your Subscription",

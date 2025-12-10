@@ -1,15 +1,18 @@
 const Map<String, String> lnAr = {
   'please_wait': "يرجى الانتظار",
   "Do you want to start this Ride?": "هل تريد بدء هذه الرحلة؟",
-  "Ask the customer for an OTP so that you can start this ride": "اطلب من العميل رمز OTP حتى تتمكن من بدء هذه الرحلة",
+  "Ask the customer for an OTP so that you can start this ride":
+      "اطلب من العميل رمز OTP حتى تتمكن من بدء هذه الرحلة",
   "Cancel": "إلغاء",
   "Ask for OTP": "اطلب رمز OTP",
   "Ride Detail": "تفاصيل الحجز",
   "Pickup": "التقاط",
   "Complete Ride": "أكمل الرحلة",
-  "Payment of this ride is Remaining From Customer": "دفع هذه الرحلة متبقي من العميل",
+  "Payment of this ride is Remaining From Customer":
+      "دفع هذه الرحلة متبقي من العميل",
   "Confirm Cash Payment": "تأكيد الدفع النقدي",
-  "Are you sure you want complete the  ride with a cash payment?": "هل أنت متأكد أنك تريد إكمال الرحلة بالدفع النقدي؟",
+  "Are you sure you want complete the  ride with a cash payment?":
+      "هل أنت متأكد أنك تريد إكمال الرحلة بالدفع النقدي؟",
   "Complete": "أكمل",
   "Track Ride": "تتبع الرحلة",
   "Ride Status": "حالة الرحلة",
@@ -53,7 +56,8 @@ const Map<String, String> lnAr = {
   "Your reliable partner for swift and convenient rides. Experience hassle-free transportation at your fingertips.":
       "شريكك الموثوق به للرحلات السريعة والمريحة. اختبر النقل السلس في متناول يدك.",
   "Fast and Reliable": "سريع وموثوق",
-  "MyTaxi ensures prompt and reliable rides, getting you to your destination with speed and efficiency.": "تضمن تاكسي بلدي رحلات سريعة وموثوقة، وتوصلك إلى وجهتك بسرعة وكفاءة.",
+  "MyTaxi ensures prompt and reliable rides, getting you to your destination with speed and efficiency.":
+      "تضمن تاكسي بلدي رحلات سريعة وموثوقة، وتوصلك إلى وجهتك بسرعة وكفاءة.",
   "Skip": "تخطى",
   "Seamless User Experience": "تجربة مستخدم سلسة",
   "Enjoy a user-friendly interface, easy bookings, and secure payments with MyTaxi. Your journey, your way.":
@@ -84,7 +88,8 @@ const Map<String, String> lnAr = {
   "Please select payment type": "يرجى اختيار نوع الدفع",
   "Notifications": "إشعارات",
   "Enter OTP to Start Ride": "أدخل رمز OTP لبدء الرحلة",
-  "Please enter the OTP which provided by customer to confirm your acceptance of the ride request.": "يرجى إدخال رمز OTP المقدم من العميل لتأكيد قبولك لطلب الرحلة.",
+  "Please enter the OTP which provided by customer to confirm your acceptance of the ride request.":
+      "يرجى إدخال رمز OTP المقدم من العميل لتأكيد قبولك لطلب الرحلة.",
   "Submit": "إرسال",
   "Confirm Ride Request": "تأكيد طلب الرحلة",
   "Are you sure you want to accept this ride request? Once confirmed, you will be directed to the next step to proceed with the ride.":
@@ -98,7 +103,8 @@ const Map<String, String> lnAr = {
   "Reasons for Canceling Ride": "أسباب إلغاء الرحلة",
   "Continue": "استمرار",
   "Your ride is successfully cancelled.": "تم إلغاء رحلتك بنجاح.",
-  "We hope to serve you better next time.": "نأمل أن نخدمك بشكل أفضل في المرة القادمة.",
+  "We hope to serve you better next time.":
+      "نأمل أن نخدمك بشكل أفضل في المرة القادمة.",
   "Back to Home": "العودة إلى الصفحة الرئيسية",
   "Something went wrong!": "حدث خطأ ما!",
   "Type here...": "اكتب هنا...",
@@ -117,33 +123,39 @@ const Map<String, String> lnAr = {
   "Select Vehicle Brand": "اختر ماركة السيارة",
   "Vehicle Model": "موديل السيارة",
   "Select Vehicle Model": "اختر موديل السيارة",
-  "Vehicle Number": "رقم السيارة",
-  "Select Vehicle Number": "اختر رقم السيارة",
+  "Vehicle license number plate": "رقم السيارة",
+  "Select Vehicle license number plate": "اختر رقم السيارة",
   "Please enter a valid details": "يرجى إدخال تفاصيل صالحة",
   "Upload": "تحميل",
   "Front Side": "الجانب الأمامي",
   "Browse": "تصفح",
   "Back Side": "الجانب الخلفي",
-  "Upload clear pictures of both sides of": "قم بتحميل صور واضحة لكلا الجانبين من",
-  "The uploaded image should be in .jpg, .png, or .pdf format.": "يجب أن تكون الصورة المحملة بتنسيق .jpg أو .png أو .pdf.",
+  "Upload clear pictures of both sides of":
+      "قم بتحميل صور واضحة لكلا الجانبين من",
+  "The uploaded image should be in .jpg, .png, or .pdf format.":
+      "يجب أن تكون الصورة المحملة بتنسيق .jpg أو .png أو .pdf.",
   "Date of Birth": "تاريخ الميلاد",
   "Enter Date of Birth": "أدخل تاريخ الميلاد",
   "camera": "كاميرا",
   "gallery": "معرض",
   "Verify your details": "تحقق من تفاصيلك",
   "Check Status": "تحقق من الحالة",
-  "User disabled by administrator, Please contact to admin": "المستخدم معطل من قبل المسؤول، يرجى الاتصال بالمسؤول",
+  "User disabled by administrator, Please contact to admin":
+      "المستخدم معطل من قبل المسؤول، يرجى الاتصال بالمسؤول",
   "Upload Your Documents": "قم بتحميل مستنداتك",
-  "Securely upload required documents for identity verification and account authentication": "قم بتحميل المستندات المطلوبة بأمان للتحقق من الهوية ومصادقة الحساب",
+  "Securely upload required documents for identity verification and account authentication":
+      "قم بتحميل المستندات المطلوبة بأمان للتحقق من الهوية ومصادقة الحساب",
   "Add Your Vehicle Details": "أضف تفاصيل سيارتك",
   "Verified": "تم التحقق",
   "Not Verified": "لم يتم التحقق",
   "Verify Your Phone Number": "تحقق من رقم هاتفك",
-  "Enter  6-digit code sent to your mobile number to complete verification.": "أدخل الرمز المكون من 6 أرقام المرسل إلى رقم هاتفك لإكمال التحقق.",
+  "Enter  6-digit code sent to your mobile number to complete verification.":
+      "أدخل الرمز المكون من 6 أرقام المرسل إلى رقم هاتفك لإكمال التحقق.",
   "Did’t Receive a code ?": "لم تستلم رمزًا؟",
   "Resend Code": "إعادة إرسال الرمز",
   "No Rides Found": "لم يتم العثور على رحلات",
-  "Your ride history is currently empty. Start your journey with MyTaxi by riding your first ride now!": "سجل رحلتك فارغ حاليًا. ابدأ رحلتك مع تاكسي بلدي بركوب رحلتك الأولى الآن!",
+  "Your ride history is currently empty. Start your journey with MyTaxi by riding your first ride now!":
+      "سجل رحلتك فارغ حاليًا. ابدأ رحلتك مع تاكسي بلدي بركوب رحلتك الأولى الآن!",
   "Pickup Point": "نقطة الالتقاط",
   "Dropout Point": "نقطة النزول",
   "Marcado Pago Payment": "دفع ماركادو باجو",
@@ -153,7 +165,8 @@ const Map<String, String> lnAr = {
   "Continue Payment": "استمر في الدفع",
   "Payment": "دفع",
   "Services": "خدمات",
-  "Failed to update status please try again": "فشل تحديث الحالة، يرجى المحاولة مرة أخرى",
+  "Failed to update status please try again":
+      "فشل تحديث الحالة، يرجى المحاولة مرة أخرى",
   "Online": "متصل",
   "Document": "مستند",
   "Rate Us": "قيمنا",
@@ -166,7 +179,8 @@ const Map<String, String> lnAr = {
   "Terms & Condition": "الشروط والأحكام",
   "Privacy & Policy": "سياسة الخصوصية",
   "Cancel Ride": "إلغاء الرحلة",
-  "Are you sure you want cancel this ride?": "هل أنت متأكد أنك تريد إلغاء هذه الرحلة؟",
+  "Are you sure you want cancel this ride?":
+      "هل أنت متأكد أنك تريد إلغاء هذه الرحلة؟",
   "Ride cancelled successfully!": "تم إلغاء الرحلة بنجاح!",
   "Your Ride is Rejected": "تم رفض رحلتك",
   "Accept": "قبول",
@@ -213,7 +227,8 @@ const Map<String, String> lnAr = {
   "Dimension": "الأبعاد",
   "Parcel Image": "صورة الطرد",
   "Reasons for Canceling Intercity Ride": "أسباب إلغاء رحلة بين المدن",
-  "Your intercity ride is successfully cancelled.": "تم إلغاء رحلتك بين المدن بنجاح.",
+  "Your intercity ride is successfully cancelled.":
+      "تم إلغاء رحلتك بين المدن بنجاح.",
   "Intercity Ride Cancelled Successfully..": "تم إلغاء رحلة بين المدن بنجاح..",
   "No Search Data": "لا توجد بيانات بحث",
   "Select Date": "حدد التاريخ",
@@ -222,7 +237,8 @@ const Map<String, String> lnAr = {
   "Parcel Rides": "رحلات الطرود",
   "Ride Statement": "كشف الرحلات",
   "Download Ride Statement": "تحميل كشف الرحلات",
-  "Select your preferred cab type, choose a date range and download your ride statement": "اختر نوع التاكسي المفضل لديك، حدد نطاق التاريخ، وقم بتنزيل كشف رحلاتك",
+  "Select your preferred cab type, choose a date range and download your ride statement":
+      "اختر نوع التاكسي المفضل لديك، حدد نطاق التاريخ، وقم بتنزيل كشف رحلاتك",
   "Select Ride Type": "اختر نوع الرحلة",
   "Select Star date to End Date": "حدد تاريخ البداية إلى تاريخ النهاية",
   "Download": "تحميل",
@@ -230,7 +246,8 @@ const Map<String, String> lnAr = {
   "clear": "مسح",
   "OK": "موافق",
   "Delete account": "حذف الحساب",
-  "Your account will be deleted permanently. Your Data will not be Restored Again": "سيتم حذف حسابك نهائيا. لن تتم استعادة بياناتك مرة أخرى",
+  "Your account will be deleted permanently. Your Data will not be Restored Again":
+      "سيتم حذف حسابك نهائيا. لن تتم استعادة بياناتك مرة أخرى",
   "Account Deleted Successfully..": "تم حذف الحساب بنجاح..",
   "Delete": "يمسح",
   "Your Subscription": "اشتراكك",

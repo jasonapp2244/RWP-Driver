@@ -26,8 +26,14 @@ class UpdateVehicleDetailsView extends StatelessWidget {
         init: UpdateVehicleDetailsController(),
         builder: (controller) {
           return Scaffold(
-            backgroundColor: themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white,
-            appBar: AppBarWithBorder(title: "Vehicle Details".tr, bgColor: themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white),
+            backgroundColor: themeChange.isDarkTheme()
+                ? AppThemData.black
+                : AppThemData.white,
+            appBar: AppBarWithBorder(
+                title: "Vehicle Details".tr,
+                bgColor: themeChange.isDarkTheme()
+                    ? AppThemData.black
+                    : AppThemData.white),
             body: Padding(
               padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
               child: SingleChildScrollView(
@@ -38,103 +44,223 @@ class UpdateVehicleDetailsView extends StatelessWidget {
                     Text(
                       'Select Vehicle Type'.tr,
                       style: GoogleFonts.inter(
-                        color: themeChange.isDarkTheme() ? AppThemData.grey25 : AppThemData.grey950,
+                        color: themeChange.isDarkTheme()
+                            ? AppThemData.grey25
+                            : AppThemData.grey950,
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
+                    // Container(
+                    //   height: 70.0,
+                    //   width: Responsive.width(100, context),
+                    //   margin: const EdgeInsets.only(top: 16, bottom: 16),
+                    //   decoration: BoxDecoration(
+                    //     border: Border.all(
+                    //       color: themeChange.isDarkTheme()
+                    //           ? AppThemData.grey800
+                    //           : AppThemData.grey100,
+                    //     ),
+                    //     borderRadius: BorderRadius.circular(12.0),
+                    //   ),
+                    //   child: DropdownButtonHideUnderline(
+                    //     child: Obx(
+                    //       () => DropdownButton<VehicleTypeModel>(
+                    //         style: GoogleFonts.inter(
+                    //           fontSize: 16,
+                    //           color: themeChange.isDarkTheme()
+                    //               ? AppThemData.white
+                    //               : AppThemData.grey950,
+                    //         ),
+                    //         hint: Text(
+                    //           "Select Vehicle Type".tr,
+                    //           style: GoogleFonts.inter(
+                    //             color: themeChange.isDarkTheme()
+                    //                 ? AppThemData.white
+                    //                 : AppThemData.grey950,
+                    //             fontSize: 16,
+                    //           ),
+                    //         ),
+                    //         itemHeight: 70,
+                    //         dropdownColor: themeChange.isDarkTheme()
+                    //             ? AppThemData.black
+                    //             : AppThemData.white,
+                    //         padding: const EdgeInsets.only(right: 12),
+                    //         selectedItemBuilder: (context) {
+                    //           return controller.vehicleTypeList
+                    //               .map((VehicleTypeModel value) {
+                    //             return Padding(
+                    //               padding: const EdgeInsets.only(
+                    //                   left: 12, right: 12),
+                    //               child: Row(
+                    //                 children: [
+                    //                   Image.network(
+                    //                     value.image,
+                    //                     height: 42,
+                    //                     width: 42,
+                    //                   ),
+                    //                   const SizedBox(
+                    //                     width: 15,
+                    //                   ),
+                    //                   Text(value.title),
+                    //                 ],
+                    //               ),
+                    //             );
+                    //           }).toList();
+                    //         },
+                    //         items: controller.vehicleTypeList
+                    //             .map<DropdownMenuItem<VehicleTypeModel>>(
+                    //                 (VehicleTypeModel value) {
+                    //           return DropdownMenuItem(
+                    //             value: value,
+                    //             child: Column(
+                    //               children: [
+                    //                 Row(
+                    //                   children: [
+                    //                     Image.network(
+                    //                       value.image,
+                    //                       height: 42,
+                    //                       width: 42,
+                    //                     ),
+                    //                     const SizedBox(
+                    //                       width: 15,
+                    //                     ),
+                    //                     Text(value.title),
+                    //                   ],
+                    //                 ),
+                    //                 const SizedBox(
+                    //                   height: 10,
+                    //                 ),
+                    //                 Visibility(
+                    //                     visible: controller.vehicleTypeList
+                    //                             .indexOf(value) !=
+                    //                         (controller.vehicleTypeList.length -
+                    //                             1),
+                    //                     child: const Divider())
+                    //               ],
+                    //             ),
+                    //           );
+                    //         }).toList(),
+                    //         borderRadius: BorderRadius.circular(12),
+                    //         isExpanded: false,
+                    //         isDense: false,
+                    //         onChanged: isUploaded
+                    //             ? null
+                    //             : (VehicleTypeModel? newSelectedBank) {
+                    //                 controller.vehicleTypeModel.value =
+                    //                     newSelectedBank!;
+                    //               },
+                    //         value: controller.vehicleTypeModel.value,
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                     Container(
-                      height: 70.0,
-                      width: Responsive.width(100, context),
-                      margin: const EdgeInsets.only(top: 16, bottom: 16),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: themeChange.isDarkTheme() ? AppThemData.grey800 : AppThemData.grey100,
+  height: 70.0,
+  width: Responsive.width(100, context),
+  margin: const EdgeInsets.only(top: 16, bottom: 16),
+  decoration: BoxDecoration(
+    border: Border.all(
+      color: themeChange.isDarkTheme()
+          ? AppThemData.grey800
+          : AppThemData.grey100,
+    ),
+    borderRadius: BorderRadius.circular(12.0),
+  ),
+  child: DropdownButtonHideUnderline(
+    child: Obx(
+      () {
+        // IMPORTANT FIX: if list is empty → return placeholder
+        if (controller.vehicleTypeList.isEmpty) {
+          return const Center(child: Text("Loading..."));
+        }
+
+        return DropdownButton<VehicleTypeModel>(
+          style: GoogleFonts.inter(
+            fontSize: 16,
+            color: themeChange.isDarkTheme()
+                ? AppThemData.white
+                : AppThemData.grey950,
+          ),
+          hint: Text(
+            "Select Vehicle Type".tr,
+            style: GoogleFonts.inter(
+              color: themeChange.isDarkTheme()
+                  ? AppThemData.white
+                  : AppThemData.grey950,
+              fontSize: 16,
+            ),
+          ),
+          itemHeight: 70,
+          dropdownColor:
+              themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white,
+          padding: const EdgeInsets.only(right: 12),
+
+          // Selected item widget
+          selectedItemBuilder: (context) {
+            return controller.vehicleTypeList.map((value) {
+              return Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12),
+                child: Row(
+                  children: [
+                    Image.network(value.image, height: 42, width: 42),
+                    const SizedBox(width: 15),
+                    Text(value.title),
+                  ],
+                ),
+              );
+            }).toList();
+          },
+
+          // Dropdown items
+          items: controller.vehicleTypeList
+              .map((value) => DropdownMenuItem(
+                    value: value,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Image.network(value.image, height: 42, width: 42),
+                            const SizedBox(width: 15),
+                            Text(value.title),
+                          ],
                         ),
-                        borderRadius: BorderRadius.circular(12.0),
-                      ),
-                      child: DropdownButtonHideUnderline(
-                        child: Obx(
-                          () => DropdownButton<VehicleTypeModel>(
-                            style: GoogleFonts.inter(
-                              fontSize: 16,
-                              color: themeChange.isDarkTheme() ? AppThemData.white : AppThemData.grey950,
-                            ),
-                            hint: Text(
-                              "Select Vehicle Type".tr,
-                              style: GoogleFonts.inter(
-                                color: themeChange.isDarkTheme() ? AppThemData.white : AppThemData.grey950,
-                                fontSize: 16,
-                              ),
-                            ),
-                            itemHeight: 70,
-                            dropdownColor: themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white,
-                            padding: const EdgeInsets.only(right: 12),
-                            selectedItemBuilder: (context) {
-                              return controller.vehicleTypeList.map((VehicleTypeModel value) {
-                                return Padding(
-                                  padding: const EdgeInsets.only(left: 12, right: 12),
-                                  child: Row(
-                                    children: [
-                                      Image.network(
-                                        value.image,
-                                        height: 42,
-                                        width: 42,
-                                      ),
-                                      const SizedBox(
-                                        width: 15,
-                                      ),
-                                      Text(value.title),
-                                    ],
-                                  ),
-                                );
-                              }).toList();
-                            },
-                            items: controller.vehicleTypeList.map<DropdownMenuItem<VehicleTypeModel>>((VehicleTypeModel value) {
-                              return DropdownMenuItem(
-                                value: value,
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Image.network(
-                                          value.image,
-                                          height: 42,
-                                          width: 42,
-                                        ),
-                                        const SizedBox(
-                                          width: 15,
-                                        ),
-                                        Text(value.title),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Visibility(visible: controller.vehicleTypeList.indexOf(value) != (controller.vehicleTypeList.length - 1), child: const Divider())
-                                  ],
-                                ),
-                              );
-                            }).toList(),
-                            borderRadius: BorderRadius.circular(12),
-                            isExpanded: false,
-                            isDense: false,
-                            onChanged: isUploaded
-                                ? null
-                                : (VehicleTypeModel? newSelectedBank) {
-                                    controller.vehicleTypeModel.value = newSelectedBank!;
-                                  },
-                            value: controller.vehicleTypeModel.value,
-                          ),
-                        ),
-                      ),
+                        const SizedBox(height: 10),
+                        Visibility(
+                          visible: controller.vehicleTypeList.indexOf(value) !=
+                              controller.vehicleTypeList.length - 1,
+                          child: const Divider(),
+                        )
+                      ],
                     ),
+                  ))
+              .toList(),
+
+          borderRadius: BorderRadius.circular(12),
+          isExpanded: false,
+          isDense: false,
+
+          // On Change
+          onChanged: (newValue) {
+            controller.vehicleTypeModel.value = newValue;
+          },
+
+          // Selected Value (IMPORTANT)
+          value: controller.vehicleTypeModel.value,
+        );
+      },
+    ),
+  ),
+)
+,
                     InkWell(
                       onTap: isUploaded
                           ? null
                           : () {
                               CustomSearchDialog.vehicleBrandSearchDialog(
-                                  bgColor: themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white,
+                                  bgColor: themeChange.isDarkTheme()
+                                      ? AppThemData.black
+                                      : AppThemData.white,
                                   context: context,
                                   title: "Search Vehicle Brand",
                                   list: controller.vehicleBrandList);
@@ -153,7 +279,9 @@ class UpdateVehicleDetailsView extends StatelessWidget {
                           ? null
                           : () {
                               CustomSearchDialog.vehicleModelSearchDialog(
-                                  bgColor: themeChange.isDarkTheme() ? AppThemData.black : AppThemData.white,
+                                  bgColor: themeChange.isDarkTheme()
+                                      ? AppThemData.black
+                                      : AppThemData.white,
                                   context: context,
                                   title: "Search Vehicle Model",
                                   list: controller.vehicleModelList);
@@ -168,8 +296,8 @@ class UpdateVehicleDetailsView extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     TextFieldWithTitle(
-                      title: "Vehicle Number".tr,
-                      hintText: "Select Vehicle Number".tr,
+                      title: "Vehicle license number plate".tr,
+                      hintText: "Select Vehicle license number plate".tr,
                       keyboardType: TextInputType.text,
                       controller: controller.vehicleNumberController,
                       isEnable: !isUploaded,
@@ -184,11 +312,14 @@ class UpdateVehicleDetailsView extends StatelessWidget {
                           buttonTextColor: AppThemData.black,
                           onTap: () {
                             if (controller.vehicleBrandController.text.isNotEmpty &&
-                                controller.vehicleModelController.text.isNotEmpty &&
-                                controller.vehicleNumberController.text.isNotEmpty) {
+                                controller
+                                    .vehicleModelController.text.isNotEmpty &&
+                                controller
+                                    .vehicleNumberController.text.isNotEmpty) {
                               controller.saveVehicleDetails();
                             } else {
-                              ShowToastDialog.showToast("Please enter a valid details".tr);
+                              ShowToastDialog.showToast(
+                                  "Please enter a valid details".tr);
                             }
                           },
                           size: const Size(208, 52),
